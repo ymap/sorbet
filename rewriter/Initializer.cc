@@ -53,7 +53,7 @@ void maybeRemoveBind(core::Context ctx, ast::Send *send) {
     }
 }
 
-// if expr is of the form `@var = local`, and `local` is typed, then replace it with with `@var = T.let(local,
+// if expr is of the form `@var = local`, and `local` is typed, then replace it with `@var = T.let(local,
 // type_of_local)`
 void maybeAddLet(core::MutableContext ctx, ast::ExpressionPtr &expr,
                  const UnorderedMap<core::NameRef, const ast::ExpressionPtr *> &argTypeMap,

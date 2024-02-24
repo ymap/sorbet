@@ -14,7 +14,7 @@ would be a massive undertaking.
 
 <!-- prettier-ignore-start -->
 
-[^languages]: We also use plenty of of other languages including Go for
+[^languages]: We also use plenty of other languages including Go for
 infrastructure tasks, Scala for data wrangling, and JavaScript for client-side
 work.
 

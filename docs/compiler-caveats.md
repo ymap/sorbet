@@ -14,7 +14,7 @@ execution paths within methods that the compiler is aware of.
 Loading shared objects produced by the compiler requires a little bit of setup.
 As it's not possible for us to bake-in the path to the ruby source file at
 compile time, we expect that this is passed through to the shared object via the
-`$__sorbet_ruby_realpath` global. The effect of this is is that you either need
+`$__sorbet_ruby_realpath` global. The effect of this is that you either need
 to patch `require` to supply this value at runtime, or provide it directly
 before loading the shared object.
 
@@ -50,7 +50,7 @@ with the ruby stack:
 * Closure variable storage
 * Method arguments for sends that will go through the vm
 
-In order to to support these features, we edit the top of the ruby stack when a
+In order to support these features, we edit the top of the ruby stack when a
 compiled function is entered, making space for locals and populating the iseq
 pointer. The iseq pointer that is written into the stack it is allocated when
 the compiled module is first loaded, and has enough fields filled out to inform
@@ -88,7 +88,7 @@ compiler, in Stripe's Ruby repo:
 
 http://go/git/stripe-private-oss-forks/ruby
 
-However, in order to keep the the Sorbet Compiler build self-contained and
+However, in order to keep the Sorbet Compiler build self-contained and
 runnable outside of Stripe infrastructure, we do not reference the internal git
 repository directly from our build. Instead, we generate diffs against vanilla
 Ruby 2.7.2, and place them in `third-party/ruby`. The patches are applied in

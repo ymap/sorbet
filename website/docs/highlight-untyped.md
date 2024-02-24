@@ -128,7 +128,7 @@ passes it to the underlying `initialize` request.
   would be too noisy.
 
 - This feature will only display diagnostics for **open files**. VS Code scales
-  poorly when language servers report a very large number number of diagnostics,
+  poorly when language servers report a very large number of diagnostics,
   and using this feature adds a non-trivial slowdown to Sorbet itself.
 
 - These blue-underline diagnostics are **not type errors**. In this mode, type

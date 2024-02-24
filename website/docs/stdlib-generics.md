@@ -149,7 +149,7 @@ report a static error, but it cannot do so in all cases.
 ## Standard library generics and variance
 
 Note that all the classes in the Ruby standard library that Sorbet knows about
-are **covariant** in their generic type members. Variance is is discussed in the
+are **covariant** in their generic type members. Variance is discussed in the
 docs for [Generic Classes and Methods](generics.md).
 
 Implementing covariant classes in the Ruby standard library is a compromise. It

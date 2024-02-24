@@ -40,7 +40,7 @@ namespace sorbet::rewriter {
  *
  *   The fake A$1 class mimics how `Struct.new` works at runtime, and allows doing things like
  *   overriding methods inside `# ... body ...` instead of redefining them (which means `super` will
- *   simply dispatch the the original method, rather than having to use something like
+ *   simply dispatch the original method, rather than having to use something like
  *   `alias_method` to get a reference to the original method before redefinition.)
  */
 class Struct final {

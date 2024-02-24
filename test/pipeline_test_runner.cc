@@ -516,7 +516,7 @@ TEST_CASE("PerPhaseTest") { // NOLINT
 
         handler.checkExpectations();
 
-        // Autogen forces you to to put --stop-after=namer so lets not run
+        // Autogen forces you to put --stop-after=namer so lets not run
         // anything else
         return;
     } else {

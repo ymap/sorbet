@@ -36,7 +36,7 @@ fi
 while IFS= read -r error_code
 do
   if ! grep -q "^## $error_code\$" website/docs/error-reference.md; then
-    echo "error: The error error '$error_code' in core/errors/ is not documented in website/docs/error-reference.md. Defined here:"
+    echo "error: The error '$error_code' in core/errors/ is not documented in website/docs/error-reference.md. Defined here:"
     grep -r -n "$error_code" core/errors | indent4
     had_error=2
   fi

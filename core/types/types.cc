@@ -198,7 +198,7 @@ TypePtr Types::dropSubtypesOf(const GlobalState &gs, const TypePtr &from, absl::
             } else if (c.symbol.data(gs)->isClass() && absl::c_all_of(klasses, [&](auto klass) {
                            return klass.data(gs)->isClass() && !klass.data(gs)->derivesFrom(gs, c.symbol);
                        })) {
-                // We have two classes (not modules), and if all of the the classes we're removing
+                // We have two classes (not modules), and if all of the classes we're removing
                 // don't derive from `c`, there's nothing to do because Ruby has single inheritance.
                 result = from;
             } else if (cdata->flags.isSealed && (cdata->flags.isAbstract || cdata->isModule())) {
@@ -216,7 +216,7 @@ TypePtr Types::dropSubtypesOf(const GlobalState &gs, const TypePtr &from, absl::
             } else if (a.klass.data(gs)->isClass() && absl::c_all_of(klasses, [&](auto klass) {
                            return klass.data(gs)->isClass() && !klass.data(gs)->derivesFrom(gs, a.klass);
                        })) {
-                // We have two classes (not modules), and if all of the the classes we're removing
+                // We have two classes (not modules), and if all of the classes we're removing
                 // don't derive from `c`, there's nothing to do because Ruby has single inheritance.
                 result = from;
             } else if (adata->flags.isSealed && (adata->flags.isAbstract || adata->isModule())) {

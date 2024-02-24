@@ -81,7 +81,7 @@ public:
     /**
      * Writes the C++ statements needed to convert this type into a value
      * that can be assigned to a rapidjson::Value object into `out`.
-     * A value of this type is currently stored in eval(`from`), and the the code
+     * A value of this type is currently stored in eval(`from`), and the code
      * for writing it into the destination is produced by calling assign(codeThatProducesValue)
      */
     virtual void emitToJSONValue(fmt::memory_buffer &out, std::string_view from, AssignLambda assign,

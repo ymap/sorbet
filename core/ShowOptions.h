@@ -11,7 +11,7 @@ struct ShowOptions final {
 
     ShowOptions() : useValidSyntax{false}, concretizeIfAbstract{false}, forceSelfPrefix{false} {}
 
-    // Only generate generate or suggest syntactically valid code.
+    // Only generate or suggest syntactically valid code.
     ShowOptions withUseValidSyntax() {
         ShowOptions res{*this};
         res.useValidSyntax = true;

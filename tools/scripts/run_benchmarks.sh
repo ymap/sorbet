@@ -25,7 +25,7 @@ Options:
   -v                 Verbose mode. Shows commands that are run, verbatim.
                      Useful for running the last (or only) benchmark elsewhere,
                      like under 'perf record --' or 'lldb --'.
-                     (Looks best with with -d $'\\n', see above.)
+                     (Looks best with -d $'\\n', see above.)
 EOF
 }
 

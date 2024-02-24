@@ -22,7 +22,7 @@ uint32_t incZero(uint32_t a) {
 // because the that `foo` might end up dispatching to the unique name, despite not mentioning the
 // unique name directly.
 //
-// Similarly for constant names--changes to the the fake `MyEnum::X$1` symbols we create to model
+// Similarly for constant names--changes to the fake `MyEnum::X$1` symbols we create to model
 // `T::Enum` subclasses could affect a file that simply mentions a constant with the name `X` (but
 // not a file that mentions a method called `X()`, which is why we still include the name kind in
 // the hash for non-UNIQUE names).

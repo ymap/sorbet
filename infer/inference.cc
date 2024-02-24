@@ -68,7 +68,7 @@ unique_ptr<cfg::CFG> Inference::run(core::Context ctx, unique_ptr<cfg::CFG> cfg)
         }
         if (!constr->solve(ctx)) {
             Exception::raise("Constraint should always solve after creating empty TypeConstraint with all upper bounds "
-                             "set to to SelfTypeParam of itself");
+                             "set to SelfTypeParam of itself");
         }
         guessTypes = false;
     }
@@ -131,7 +131,7 @@ unique_ptr<cfg::CFG> Inference::run(core::Context ctx, unique_ptr<cfg::CFG> cfg)
                     e.setHeader("This expression appears after an unconditional return");
                 }
 
-                // Only report the expression expression in the dead block
+                // Only report the expression in the dead block
                 break;
             }
             continue;

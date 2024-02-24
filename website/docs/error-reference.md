@@ -164,7 +164,7 @@ class << some_variable
 end
 ```
 
-In this case, it is possible to directly call `include` on the the singleton
+In this case, it is possible to directly call `include` on the singleton
 class of `EXPRESSION`, but it should be done with **utmost caution**, as Sorbet
 will not consider the include and provide a less accurate analysis (see also
 [#4002](#4002)):
@@ -1012,7 +1012,7 @@ or are "nullary"), so no error is raised about redefining a method.
 
 But in this case, where their signatures specify different types, the behavior
 is unspecified. Sorbet **usually** takes the types from the "last" signature,
-but which signature is "last" is implementation defined when when the two method
+but which signature is "last" is implementation defined when the two method
 definitions happen in two separate files. This includes the case when both a
 Ruby source file (`*.rb`) and an RBI file (`*.rbi`) specify a signature for a
 method.
@@ -4160,7 +4160,7 @@ class Box
 end
 ```
 
-In this example, we're trying to to call the method `only_on_a`, but we haven't
+In this example, we're trying to call the method `only_on_a`, but we haven't
 specified any type bounds on the `Elem` type parameter, which means we can't
 make any assumption about what methods it might have.
 

@@ -1,6 +1,6 @@
 # typed: false
 
-# Code like this comes up from time to time when when running Sorbet over a
+# Code like this comes up from time to time when running Sorbet over a
 # random Ruby gem, e.g. where Sorbet can't see that DoesNotExist is a class
 # that exists in some _other_ gem, not the one we're currently running over.
 #

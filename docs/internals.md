@@ -521,7 +521,7 @@ ways. Also, since the CFG can have cycles, we require that within a cycle of
 basic blocks a variable's type cannot be widened or changed. (See
 <http://srb.help/7001>.)
 
-The inference pass itself is largely just traversing the the CFG for each method
+The inference pass itself is largely just traversing the CFG for each method
 and processing bindings. It delegates much of the implementation of the type
 system (like getting a method's result type, checking argument types, subtyping,
 generics, etc.) to logic implemented [core/types/]. See below for a discussion

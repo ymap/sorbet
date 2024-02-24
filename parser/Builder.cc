@@ -1333,7 +1333,7 @@ public:
 
     unique_ptr<Node> numparams(sorbet::parser::NodeVec declaringNodes) {
         ENFORCE(!declaringNodes.empty(), "NumParams node created without declaring node.");
-        // During desugar we will create implicit arguments for the block based on on the highest
+        // During desugar we will create implicit arguments for the block based on the highest
         // numparam used in it's body.
         // We will use the first node declaring a numbered parameter for the location of the implicit arg.
         // In the meantime, we need a loc for the NumParams node to pass the sanity check at the end of the

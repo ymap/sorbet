@@ -54,7 +54,7 @@ correctly.
   These kinds of problems are bad because they cause confusion and frustration
   for people attempting to **use** the generic abstraction, not for the person
   who implemented the abstraction. This is especially painful for those who are
-  new to Sorbet (or even Ruby), as well as those those who are not intimately
+  new to Sorbet (or even Ruby), as well as those who are not intimately
   familiar with the limitations of Sorbet's generics.
 
   To mitigate this, "test drive" the abstraction being built. Don't assume that

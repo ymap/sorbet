@@ -687,7 +687,7 @@ bool returnAcrossBlockIsPresent(CompilerState &cs, cfg::CFG &cfg, const vector<i
     return false;
 }
 
-// Returns the number of scopes that must be traversed to get back out out to the
+// Returns the number of scopes that must be traversed to get back out to the
 // top-level method frame and the number of blocks that must be traversed to get
 // back out to the top-level method frame.  The latter is important for providing
 // accurate location information for block iseqs.

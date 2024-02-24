@@ -1295,7 +1295,7 @@ DispatchResult dispatchCallSymbol(const GlobalState &gs, const DispatchArgs &arg
                 consumed.insert(spec.name);
                 // We want the precise location of the kwarg that we are processing.
                 // To do that, we rely on hash->{keys,values} being added in the order
-                // that the kwargs appear in the the call.  We also rely on args from
+                // that the kwargs appear in the call.  We also rely on args from
                 // a shapely-typed kwsplat hash (implicit or explicit) being added to
                 // hash->{keys,values} after the explicitly-named kwargs in the call.
                 auto offset = arg - hash->keys.begin();

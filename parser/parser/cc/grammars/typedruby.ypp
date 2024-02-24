@@ -901,7 +901,7 @@ int yylex(parser::semantic_type *lval, ruby_parser::location *lloc, ruby_parser:
 
 
            // We have to factor these like this because we need these rules to run before lexing any lookahead tokens,
-           // since we have two rules that read `kWHILE` (and `kUNTIL`), and all tokens that we lex after after such
+           // since we have two rules that read `kWHILE` (and `kUNTIL`), and all tokens that we lex after such
            // a token must be lexed assuming this side effect has taken place.
            while: kWHILE
                     {

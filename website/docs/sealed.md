@@ -85,7 +85,7 @@ Now Sorbet will do two things:
 
 - It will only allow `ChargeAttemptResult` to be included into classes defined
   in this file.
-- It will will feed information into Sorbet's
+- It will feed information into Sorbet's
   [control flow-sensitive typing](flow-sensitive.md) to check that all
   subclasses are handled exhaustively.
 
